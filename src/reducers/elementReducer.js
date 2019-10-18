@@ -27,6 +27,12 @@ export default (state = initialState, action) => {
 				...state,
 				loading: true
 			};
+		case GET_ONE_ELEMENT:
+			return {
+				...state,
+				current: action.payload,
+				loading: false
+			};
 		default:
 			return state;
 	}

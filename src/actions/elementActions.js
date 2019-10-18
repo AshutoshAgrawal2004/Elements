@@ -21,10 +21,11 @@ export const getElements = () => async dispatch => {
 			payload: data
 		});
 	} catch (err) {
-		dispatch({
-			type: SHOW_ERROR,
-			payload: err.response.statusText
-		});
+		// dispatch({
+		// 	type: SHOW_ERROR,
+		// 	payload: err.response.statusText
+		// });
+		console.log(err);
 	}
 };
 

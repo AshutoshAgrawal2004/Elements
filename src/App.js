@@ -14,7 +14,9 @@ function App() {
 	return (
 		<Provider store={store}>
 			<h1>Chemistry</h1>
-			<Elements />
+			<div className='container'>
+				<Elements />
+			</div>
 		</Provider>
 	);
 }

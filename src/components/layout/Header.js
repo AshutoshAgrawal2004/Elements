@@ -6,7 +6,7 @@ const Header = () => {
 			<div className='navbar-fixed'>
 				<nav>
 					<div className='nav-wrapper'>
-						<Link href='#!' className='brand-logo'>
+						<Link to='#' className='brand-logo'>
 							Elements
 						</Link>
 						<Link
@@ -29,10 +29,10 @@ const Header = () => {
 			</div>
 			<ul className='sidenav' id='mobile-demo'>
 				<li>
-					<Link href='sass.html'>About</Link>
+					<Link to='sass.html'>About</Link>
 				</li>
 				<li>
-					<Link href='badges.html'>Source</Link>
+					<Link to='badges.html'>Source</Link>
 				</li>
 			</ul>
 		</Fragment>

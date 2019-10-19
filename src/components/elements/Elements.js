@@ -13,6 +13,7 @@ const Elements = ({
 
 		//eslint-disable-next-line
 	}, []);
+
 	if (loading || elements === null) {
 		return <Preloader />;
 	}

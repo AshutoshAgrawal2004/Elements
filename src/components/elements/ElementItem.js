@@ -2,9 +2,30 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 const ElementItem = ({ element, name }) => {
+	const colors = [
+		'red',
+		'pink',
+		'purple',
+		'deep-purple',
+		'indigo',
+		'blue',
+		'light-blue',
+		'cyan',
+		'teal',
+		'green',
+		'light-green',
+		'lime',
+		'yellow',
+		'amber',
+		'orange',
+		'deep-orange',
+		'brown',
+		'grey',
+		'blue-grey'
+	];
 	const { symbol, atomic_mass, number, summary } = element;
 	return (
-		<div className='card center'>
+		<div className={`card center ${colors[(number - 1) % 19]} white-text`}>
 			<h3 className='left-align'>{number}</h3>
 			<div className='card-image'>
 				<img

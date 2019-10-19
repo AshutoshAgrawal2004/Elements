@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { Link } from 'react-router-dom';
 const ElementItem = ({ element, name }) => {
 	const { symbol, atomic_mass, number, summary } = element;
 	return (
@@ -8,7 +8,8 @@ const ElementItem = ({ element, name }) => {
 			<h3 className='left-align'>{number}</h3>
 			<div className='card-image'>
 				<img
-					src={`https://images-of-elements.com/t/${name.toLowerCase()}.png`}
+					// src={`https://images-of-elements.com/t/${name.toLowerCase()}.png`}
+					src={`https://periodictable.com/GridImages/small/${number}.JPG`}
 					alt={name}
 					style={elementImgStyle}
 					className='activator'
@@ -25,9 +26,12 @@ const ElementItem = ({ element, name }) => {
 					<i className='material-icons right'>close</i>
 				</span>
 				<p>{summary}</p>
-				<a className='waves-effect waves-light btn red'>
+				<Link
+					className='waves-effect waves-light btn red'
+					to={`/elements/${name}`}
+				>
 					<i className='material-icons right'>search</i>Know More
-				</a>
+				</Link>
 			</div>
 		</div>
 	);

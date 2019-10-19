@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import Elements from './components/elements/Elements';
 import ElementDetail from './components/elements/ElementDetail';
+import SearchElements from './components/layout/SearchElements';
 
 function App() {
 	useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
 		<Provider store={store}>
 			<Router>
 				<h1>Chemistry</h1>
+				<SearchElements />
 				<div className='container'>
 					<Switch>
 						<Route exact path='/' component={Elements} />

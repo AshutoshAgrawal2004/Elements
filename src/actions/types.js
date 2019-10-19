@@ -2,5 +2,6 @@ export const GET_ELEMENTS = 'GET_ELEMENTS';
 export const GET_ONE_ELEMENT = 'GET_ONE_ELEMENT';
 export const SET_LOADING = 'SET_LOADING';
 export const SEARCH_ELEMENTS = 'SEARCH_ELEMENTS';
+export const CLEAR_SEARCH = 'CLEAR_SEARCH';
 export const CLEAR_CURRENT = 'CLEAR_CURRENT';
 export const SHOW_ERROR = 'SHOW_ERROR';

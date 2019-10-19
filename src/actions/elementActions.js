@@ -3,6 +3,7 @@ import {
 	GET_ONE_ELEMENT,
 	SET_LOADING,
 	SEARCH_ELEMENTS,
+	CLEAR_SEARCH,
 	SHOW_ERROR,
 	CLEAR_CURRENT
 } from './types';
@@ -47,6 +48,12 @@ export const getAnElement = name => async dispatch => {
 		console.log(err);
 	}
 };
+export const searchElements = name => {
+	return {
+		type: SEARCH_ELEMENTS,
+		payload: name
+	};
+};
 
 export const setLoading = () => {
 	return {
@@ -56,5 +63,10 @@ export const setLoading = () => {
 export const clearCurrent = () => {
 	return {
 		type: CLEAR_CURRENT
+	};
+};
+export const clearSearch = () => {
+	return {
+		type: CLEAR_SEARCH
 	};
 };

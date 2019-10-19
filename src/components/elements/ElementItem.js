@@ -28,7 +28,10 @@ const ElementItem = ({ element, name }) => {
 	return (
 		<div className={`card center ${color} white-text`}>
 			<div className='card-content'>
-				<h3 className='left-align'>{number}</h3>
+				<div className='num-symbol'>
+					<h3 className='left'>{number}</h3>
+					<h3 className='right'>{symbol}</h3>
+				</div>
 				<div className='card-image'>
 					<img
 						// src={`https://images-of-elements.com/t/${name.toLowerCase()}.png`}
@@ -36,7 +39,6 @@ const ElementItem = ({ element, name }) => {
 						alt={name}
 						className='activator element-img hoverable'
 					/>
-					<span className='card-title element-symbol'>{symbol}</span>
 				</div>
 				<h4>{name}</h4>
 				<h5>{atomic_mass}</h5>
@@ -46,7 +48,7 @@ const ElementItem = ({ element, name }) => {
 					{name}
 					<i className='material-icons right'>close</i>
 				</span>
-				<h5 className='left-align'>{summary}</h5>
+				<p className='left-align element-info'>{summary}</p>
 				<Link
 					className='waves-effect waves-light btn red'
 					to={`/elements/${name}`}

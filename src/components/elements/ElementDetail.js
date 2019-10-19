@@ -42,16 +42,16 @@ const ElementDetail = ({
 					<div className='col l7 s12'>
 						<div className='card center red white-text'>
 							<div className='card-content'>
-								<h3 className='left-align'>{number}</h3>
+								<div className='num-symbol'>
+									<h3 className='left'>{number}</h3>
+									<h3 className='right'>{symbol}</h3>
+								</div>
 								<div className='card-image'>
 									<img
 										src={`https://periodictable.com/GridImages/small/${number}.JPG`}
 										alt={name}
-										className='activator element-img'
+										className='activator element-img hoverable'
 									/>
-									<span className='card-title element-symbol'>
-										{symbol}
-									</span>
 								</div>
 								<h4>{name}</h4>
 								<h5>{atomic_mass}</h5>
@@ -68,7 +68,7 @@ const ElementDetail = ({
 					<div className='col l7 s12'>
 						<div className='card  green white-text'>
 							<div className='card-content'>
-								<h5>{summary}</h5>
+								<p className='element-info'>{summary}</p>
 							</div>
 						</div>
 					</div>

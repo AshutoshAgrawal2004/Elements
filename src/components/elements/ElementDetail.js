@@ -82,6 +82,10 @@ const ElementDetail = ({
 											<td>{category}</td>
 										</tr>
 										<tr>
+											<th>Appearance</th>
+											<td>{appearance}</td>
+										</tr>
+										<tr>
 											<th>Discovered By</th>
 											<td>{discovered_by}</td>
 										</tr>
@@ -91,6 +95,10 @@ const ElementDetail = ({
 												{molar_heat} J K<sup>-1</sup>mol
 												<sup>-1</sup>
 											</td>
+										</tr>
+										<tr>
+											<th>Electron Configuration</th>
+											<td>{electron_configuration}</td>
 										</tr>
 										<tr>
 											<th>Boiling Point</th>

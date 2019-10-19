@@ -46,6 +46,11 @@ export default (state = initialState, action) => {
 				...state,
 				filtered_elements: null
 			};
+		case CLEAR_CURRENT:
+			return {
+				...state,
+				current: null
+			};
 		case SET_LOADING:
 			return {
 				...state,

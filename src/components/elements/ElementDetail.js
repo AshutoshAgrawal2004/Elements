@@ -2,16 +2,18 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { getAnElement } from '../../actions/elementActions';
+import { getAnElement, clearCurrent } from '../../actions/elementActions';
 import Preloader from '../layout/Preloader';
 import AtomicShell from './AtomicShell';
 const ElementDetail = ({
 	elements: { current, loading },
 	getAnElement,
+	clearCurrent,
 	match
 }) => {
 	const name = match.params.name;
 	useEffect(() => {
+		clearCurrent();
 		getAnElement(name);
 		//eslint-disable-next-line
 	}, []);
@@ -142,7 +144,8 @@ const ElementDetail = ({
 
 ElementDetail.propTypes = {
 	elements: PropTypes.object.isRequired,
-	getAnElement: PropTypes.func.isRequired
+	getAnElement: PropTypes.func.isRequired,
+	clearCurrent: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({
@@ -150,5 +153,5 @@ const mapStateToProps = state => ({
 });
 export default connect(
 	mapStateToProps,
-	{ getAnElement }
+	{ getAnElement, clearCurrent }
 )(ElementDetail);

@@ -5,11 +5,9 @@ import M from 'materialize-css/dist/js/materialize.min.js';
 import './App.css';
 import { Provider } from 'react-redux';
 import store from './store';
-import Elements from './components/elements/Elements';
 import ElementDetail from './components/elements/ElementDetail';
 import Header from './components/layout/Header';
-
-import SearchElements from './components/layout/SearchElements';
+import Home from './components/pages/Home';
 
 function App() {
 	useEffect(() => {
@@ -20,18 +18,15 @@ function App() {
 		<Provider store={store}>
 			<Router>
 				<Header />
-				<SearchElements />
 
-				<div className='container'>
-					<Switch>
-						<Route exact path='/' component={Elements} />
-						<Route
-							exact
-							path='/elements/:name'
-							component={ElementDetail}
-						/>
-					</Switch>
-				</div>
+				<Switch>
+					<Route exact path='/' component={Home} />
+					<Route
+						exact
+						path='/elements/:name'
+						component={ElementDetail}
+					/>
+				</Switch>
 			</Router>
 		</Provider>
 	);

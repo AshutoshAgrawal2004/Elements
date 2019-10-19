@@ -26,7 +26,7 @@ const ElementItem = ({ element, name }) => {
 	const { symbol, atomic_mass, number, summary } = element;
 	const color = colors[(number - 1) % 19];
 	return (
-		<div className={`card center ${color} white-text`}>
+		<div className={`card center ${color} white-text hoverable`}>
 			<div className='card-content'>
 				<div className='num-symbol'>
 					<h3 className='left'>{number}</h3>

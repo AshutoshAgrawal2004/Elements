@@ -67,7 +67,7 @@ const ElementDetail = ({
 							</div>
 						</div>
 					</div>
-					<div className='col l7 s12'>
+					<div className='col l5 s12'>
 						<div className='card  green white-text'>
 							<div className='card-content'>
 								<p className='element-info'>{summary}</p>

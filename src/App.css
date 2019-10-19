@@ -23,6 +23,10 @@ body {
   display: inline;
 }
 
+.nav-wrapper {
+  padding: 0 1rem !important;
+}
+
 td {
   font-size: 1.25rem;
 }
@@ -33,3 +37,5 @@ th {
 
 h3,
 th {}
+
+footer {}

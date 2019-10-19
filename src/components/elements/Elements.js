@@ -37,6 +37,7 @@ const Elements = ({
 				{Object.keys(elements).map(element => (
 					<div className='col s12 m6 l4 xl3'>
 						<ElementItem
+							key={elements[element].number}
 							element={elements[element]}
 							name={element}
 						/>

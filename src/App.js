@@ -7,6 +7,8 @@ import { Provider } from 'react-redux';
 import store from './store';
 import ElementDetail from './components/elements/ElementDetail';
 import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
+
 import Home from './components/pages/Home';
 
 function App() {
@@ -27,6 +29,7 @@ function App() {
 						component={ElementDetail}
 					/>
 				</Switch>
+				<Footer />
 			</Router>
 		</Provider>
 	);

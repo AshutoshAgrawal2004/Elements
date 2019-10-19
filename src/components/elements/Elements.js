@@ -21,7 +21,7 @@ const Elements = ({
 		return (
 			<div className='row'>
 				{filtered_elements.map(element => (
-					<div className='col s12 m4 l3 xl2'>
+					<div className='col s12 m6 l4 xl3'>
 						<ElementItem
 							element={elements[element]}
 							name={element}
@@ -35,7 +35,7 @@ const Elements = ({
 		return (
 			<div className='row'>
 				{Object.keys(elements).map(element => (
-					<div className='col s12 m4 l3 xl2'>
+					<div className='col s12 m6 l4 xl3'>
 						<ElementItem
 							element={elements[element]}
 							name={element}

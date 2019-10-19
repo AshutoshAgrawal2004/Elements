@@ -19,14 +19,18 @@ const ElementDetail = ({
 		return <Preloader />;
 	} else if (current) {
 		const {
+			appearance,
 			atomic_mass,
 			boil,
 			category,
 			density,
 			discovered_by,
 			melt,
+			molar_heat,
 			number,
+			phase,
 			shells,
+			source,
 			symbol,
 			summary,
 			electron_configuration
@@ -34,27 +38,93 @@ const ElementDetail = ({
 
 		return (
 			<div className='collection'>
-				<div className={`card center red white-text`}>
-					<div className='card-content'>
-						<h3 className='left-align'>{number}</h3>
-						<div className='card-image'>
-							<img
-								// src={`https://images-of-elements.com/t/${name.toLowerCase()}.png`}
-								src={`https://periodictable.com/GridImages/small/${number}.JPG`}
-								alt={name}
-								className='activator element-img'
-							/>
-							<span className='card-title element-symbol'>
-								{symbol}
-							</span>
+				<div className='row'>
+					<div className='col l7 s12'>
+						<div className='card center red white-text'>
+							<div className='card-content'>
+								<h3 className='left-align'>{number}</h3>
+								<div className='card-image'>
+									<img
+										src={`https://periodictable.com/GridImages/small/${number}.JPG`}
+										alt={name}
+										className='activator element-img'
+									/>
+									<span className='card-title element-symbol'>
+										{symbol}
+									</span>
+								</div>
+								<h4>{name}</h4>
+								<h5>{atomic_mass}</h5>
+							</div>
 						</div>
-						<h4>{name}</h4>
-						<h5>{atomic_mass}</h5>
 					</div>
-				</div>
-				<div className={`card center yellow white-text`}>
-					<div className='card-content'>
-						<AtomicShell shells={shells} symbol={symbol} />
+					<div className='col l5 s12'>
+						<div className='card center yellow white-text'>
+							<div className='card-content'>
+								<AtomicShell shells={shells} symbol={symbol} />
+							</div>
+						</div>
+					</div>
+					<div className='col l7 s12'>
+						<div className='card  green white-text'>
+							<div className='card-content'>
+								<h5>{summary}</h5>
+							</div>
+						</div>
+					</div>
+					<div className='col l5 s12'>
+						<div className='card  blue white-text'>
+							<div className='card-content'>
+								<table>
+									<tbody>
+										<tr>
+											<th>Category</th>
+											<td>{category}</td>
+										</tr>
+										<tr>
+											<th>Discovered By</th>
+											<td>{discovered_by}</td>
+										</tr>
+										<tr>
+											<th>Molar Heat</th>
+											<td>
+												{molar_heat} J K<sup>-1</sup>mol
+												<sup>-1</sup>
+											</td>
+										</tr>
+										<tr>
+											<th>Boiling Point</th>
+											<td>{boil} K</td>
+										</tr>
+										<tr>
+											<th>Melting Point</th>
+											<td>{melt} K</td>
+										</tr>
+										<tr>
+											<th>Phase</th>
+											<td>{phase}</td>
+										</tr>
+										<tr>
+											<th>Density</th>
+											<td>
+												{density} g cm<sup>-3</sup>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div className='col l5 s12'>
+						<div className='card center light-blue white-text'>
+							<div className='card-content'>
+								<h5>
+									<a href={source} className='white-text'>
+										Know More
+									</a>
+								</h5>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -6,7 +6,7 @@ const AtomicShell = ({ shells, symbol }) => {
 		<Sketch
 			setup={(p5, parent) => {
 				console.log(parent);
-				p5.createCanvas(252, 300).parent(parent);
+				p5.createCanvas(230, 252).parent(parent);
 				p5.angleMode(p5.DEGREES);
 				p5.background(255, 235, 59);
 			}}

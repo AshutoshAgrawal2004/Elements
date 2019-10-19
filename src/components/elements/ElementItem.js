@@ -34,7 +34,7 @@ const ElementItem = ({ element, name }) => {
 						// src={`https://images-of-elements.com/t/${name.toLowerCase()}.png`}
 						src={`https://periodictable.com/GridImages/small/${number}.JPG`}
 						alt={name}
-						className='activator element-img'
+						className='activator element-img hoverable'
 					/>
 					<span className='card-title element-symbol'>{symbol}</span>
 				</div>

@@ -15,7 +15,6 @@ export const getElements = () => async dispatch => {
 			'https://chemistrydata.herokuapp.com/elements'
 		);
 		const data = await res.data;
-		console.log(data);
 		dispatch({
 			type: GET_ELEMENTS,
 			payload: data
@@ -35,7 +34,6 @@ export const getAnElement = name => async dispatch => {
 			`https://chemistrydata.herokuapp.com/elements/${name}`
 		);
 		const data = await res.data;
-		console.log(data);
 		dispatch({
 			type: GET_ONE_ELEMENT,
 			payload: data

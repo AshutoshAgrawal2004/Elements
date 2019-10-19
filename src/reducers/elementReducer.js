@@ -37,7 +37,6 @@ export default (state = initialState, action) => {
 				filtered_elements: Object.keys(state.elements).filter(
 					element => {
 						const regex = new RegExp(`${action.payload}`, 'gi');
-						console.log(element);
 						return element.match(regex);
 					}
 				)

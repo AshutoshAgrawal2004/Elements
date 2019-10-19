@@ -1,0 +1,15 @@
+.element-img {
+  border-radius: 50% !important;
+  width: 75% !important;
+  margin: auto !important;
+}
+
+.element-symbol {
+
+  padding: 0 !important;
+  margin: 0 !important;
+  left: 45% !important;
+  top: 45% !important;
+  font-size: 32px !important;
+  font-weight: 600 !important;
+}

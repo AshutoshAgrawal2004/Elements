@@ -24,29 +24,29 @@ const ElementItem = ({ element, name }) => {
 		'blue-grey'
 	];
 	const { symbol, atomic_mass, number, summary } = element;
+	const color = colors[(number - 1) % 19];
 	return (
-		<div className={`card center ${colors[(number - 1) % 19]} white-text`}>
-			<h3 className='left-align'>{number}</h3>
-			<div className='card-image'>
-				<img
-					// src={`https://images-of-elements.com/t/${name.toLowerCase()}.png`}
-					src={`https://periodictable.com/GridImages/small/${number}.JPG`}
-					alt={name}
-					style={elementImgStyle}
-					className='activator'
-				/>
-				<span className='card-title' style={elementSymbolStyle}>
-					{symbol}
-				</span>
+		<div className={`card center ${color} white-text`}>
+			<div className='card-content'>
+				<h3 className='left-align'>{number}</h3>
+				<div className='card-image'>
+					<img
+						// src={`https://images-of-elements.com/t/${name.toLowerCase()}.png`}
+						src={`https://periodictable.com/GridImages/small/${number}.JPG`}
+						alt={name}
+						className='activator element-img'
+					/>
+					<span className='card-title element-symbol'>{symbol}</span>
+				</div>
+				<h4>{name}</h4>
+				<h5>{atomic_mass}</h5>
 			</div>
-			<h4>{name}</h4>
-			<h5>{atomic_mass}</h5>
-			<div className='card-reveal'>
-				<span className='card-title grey-text text-darken-4'>
+			<div className={`card-reveal  ${color}`}>
+				<span className='card-title text-darken-4'>
 					{name}
 					<i className='material-icons right'>close</i>
 				</span>
-				<p>{summary}</p>
+				<h5 className='left-align'>{summary}</h5>
 				<Link
 					className='waves-effect waves-light btn red'
 					to={`/elements/${name}`}
@@ -57,19 +57,7 @@ const ElementItem = ({ element, name }) => {
 		</div>
 	);
 };
-const elementImgStyle = {
-	borderRadius: '50%',
-	width: '75%',
-	margin: 'auto'
-};
-const elementSymbolStyle = {
-	padding: '0',
-	margin: '0',
-	left: '45%',
-	top: '45%',
-	fontSize: '32px',
-	fontWeight: '600'
-};
+
 ElementItem.propTypes = {
 	element: PropTypes.object.isRequired,
 	name: PropTypes.string.isRequired

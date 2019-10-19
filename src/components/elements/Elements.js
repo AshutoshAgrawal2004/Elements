@@ -4,7 +4,10 @@ import { connect } from 'react-redux';
 import { getElements } from '../../actions/elementActions';
 import ElementItem from './ElementItem';
 import Preloader from '../layout/Preloader';
-const Elements = ({ elements: { elements, loading }, getElements }) => {
+const Elements = ({
+	elements: { elements, filtered_elements, loading },
+	getElements
+}) => {
 	useEffect(() => {
 		getElements();
 
@@ -13,11 +16,21 @@ const Elements = ({ elements: { elements, loading }, getElements }) => {
 	if (loading || elements === null) {
 		return <Preloader />;
 	}
+	if (filtered_elements !== null) {
+		return (
+			<div className='row'>
+				{filtered_elements.map(element => (
+					<div className='col s12 m4 l3 xl2'>
+						<ElementItem
+							element={elements[element]}
+							name={element}
+						/>
+					</div>
+				))}
+			</div>
+		);
+	}
 	if (elements.length !== 0) {
-		console.log(elements);
-		// for (const element in elements) {
-		// 	console.log(element, elements[element]);
-		// }
 		return (
 			<div className='row'>
 				{Object.keys(elements).map(element => (

@@ -38,7 +38,6 @@ export default (state = initialState, action) => {
 					element => {
 						const regex = new RegExp(`${action.payload}`, 'gi');
 						console.log(element);
-
 						return element.match(regex);
 					}
 				)

@@ -22,16 +22,29 @@ const SearchElements = ({
 	};
 
 	return (
-		<form className='form-inline'>
-			<input
-				type='search'
-				ref={text}
-				aria-label='Filter elements...'
-				placeholder='Search Elements....'
-				className='form-control mr-sm-2'
-				onChange={onChange}
-			/>
-		</form>
+		<div className='navbar-fixed'>
+			<nav>
+				<div className='nav-wrapper'>
+					<form>
+						<div className='input-field'>
+							<input
+								id='search'
+								type='search'
+								ref={text}
+								aria-label='Filter elements...'
+								placeholder='Search Elements....'
+								className='form-control mr-sm-2'
+								onChange={onChange}
+							/>
+							<label className='label-icon' for='search'>
+								<i className='material-icons'>search</i>
+							</label>
+							<i className='material-icons'>close</i>
+						</div>
+					</form>
+				</div>
+			</nav>
+		</div>
 	);
 };
 

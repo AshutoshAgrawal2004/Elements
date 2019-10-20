@@ -32,12 +32,12 @@ const ElementItem = ({ element, name }) => {
 					<h3 className='left'>{number}</h3>
 					<h3 className='right'>{symbol}</h3>
 				</div>
-				<div className='card-image'>
+				<div className='element-img'>
 					<img
 						// src={`https://images-of-elements.com/t/${name.toLowerCase()}.png`}
-						src={`https://periodictable.com/GridImages/small/${number}.JPG`}
+						src={`https://periodictable.com/GridImages/big/${number}.JPG`}
 						alt={name}
-						className='activator element-img hoverable'
+						className='activator hoverable'
 					/>
 				</div>
 				<h4>{name}</h4>

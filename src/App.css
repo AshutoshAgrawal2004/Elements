@@ -8,10 +8,14 @@ body {
 }
 
 .element-img {
-  border-radius: 50% !important;
-  width: 75% !important;
-  margin: auto !important;
+  /* border-radius: 50% !important;
+  width: 75% !important; */
+  /* -webkit-clip-path: inset(8px 48px 10px 6px);
+  clip-path: inset(8px 48px 10px 6px); */
+  width: 184px;
   clear: both;
+  overflow: hidden;
+  margin: auto;
 }
 
 .element-info {

@@ -5,7 +5,6 @@ const AtomicShell = ({ shells, symbol }) => {
 	return (
 		<Sketch
 			setup={(p5, parent) => {
-				console.log(parent);
 				p5.createCanvas(230, 252).parent(parent);
 				p5.angleMode(p5.DEGREES);
 				p5.background(255, 235, 59);
@@ -40,6 +39,9 @@ const AtomicShell = ({ shells, symbol }) => {
 	);
 };
 
-AtomicShell.propTypes = {};
+AtomicShell.propTypes = {
+	shells: PropTypes.array.isRequired,
+	symbol: PropTypes.string.isRequired
+};
 
 export default AtomicShell;

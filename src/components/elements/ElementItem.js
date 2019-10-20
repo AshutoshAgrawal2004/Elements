@@ -29,8 +29,8 @@ const ElementItem = ({ element, name }) => {
 		<div className={`card center ${color} white-text hoverable`}>
 			<div className='card-content'>
 				<div className='num-symbol'>
-					<h3 className='left'>{number}</h3>
-					<h3 className='right'>{symbol}</h3>
+					<h3 className='left activator'>{number}</h3>
+					<h3 className='right activator'>{symbol}</h3>
 				</div>
 				<div className='element-img'>
 					<img
@@ -40,8 +40,8 @@ const ElementItem = ({ element, name }) => {
 						className='activator hoverable'
 					/>
 				</div>
-				<h4>{name}</h4>
-				<h5>{atomic_mass}</h5>
+				<h4 className='activator'>{name}</h4>
+				<h5 className='activator'>{atomic_mass}</h5>
 			</div>
 			<div className={`card-reveal  ${color}`}>
 				<span className='card-title text-darken-4'>

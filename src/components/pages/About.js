@@ -21,6 +21,7 @@ const About = () => {
 							<a
 								href='https://github.com/AshutoshAgrawal2004'
 								target='_blank'
+								rel='noopener noreferrer'
 							>
 								Github
 							</a>
@@ -29,6 +30,7 @@ const About = () => {
 							<a
 								href='https://www.sololearn.com/Profile/10779261'
 								target='_blank'
+								rel='noopener noreferrer'
 							>
 								Sololearn
 							</a>

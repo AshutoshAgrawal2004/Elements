@@ -23,6 +23,15 @@ const Header = () => {
 							<li>
 								<Link to='/about'>About</Link>
 							</li>
+							<li>
+								<a
+									href='https://github.com/AshutoshAgrawal2004/Elements'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									Git Repo
+								</a>
+							</li>
 						</ul>
 					</div>
 				</nav>
@@ -33,6 +42,15 @@ const Header = () => {
 				</li>
 				<li>
 					<Link to='/about'>About</Link>
+				</li>
+				<li>
+					<a
+						href='https://github.com/AshutoshAgrawal2004/Elements'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						Git Repo
+					</a>
 				</li>
 			</ul>
 		</Fragment>

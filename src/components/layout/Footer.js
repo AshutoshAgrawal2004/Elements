@@ -8,6 +8,8 @@ const Footer = () => {
 				<a
 					className='grey-text text-lighten-4'
 					href='https://www.sololearn.com/Profile/10779261'
+					target='_blank'
+					rel='noopener noreferrer'
 				>
 					Ashutosh Agrawal
 				</a>
@@ -17,8 +19,10 @@ const Footer = () => {
 				<div className='container'>
 					© 2019 Elemental
 					<a
-						class='grey-text text-lighten-4 right'
-						href='https://github.com/AshutoshAgrawal2004'
+						className='grey-text text-lighten-4 right'
+						href='https://github.com/AshutoshAgrawal2004/Elements'
+						target='_blank'
+						rel='noopener noreferrer'
 					>
 						Git Repo
 					</a>

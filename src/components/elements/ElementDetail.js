@@ -41,7 +41,7 @@ const ElementDetail = ({
 		return (
 			<div className='collection'>
 				<div className='row'>
-					<div className='col l7 s12'>
+					<div className='col l4 m6 s12'>
 						<div className='card center red white-text'>
 							<div className='card-content'>
 								<div className='num-symbol'>
@@ -60,22 +60,30 @@ const ElementDetail = ({
 								<h5>{atomic_mass}</h5>
 							</div>
 						</div>
+						<div className='card center light-blue white-text'>
+							<div className='card-content'>
+								<h5>
+									<a href={source} className='white-text'>
+										Know More
+									</a>
+								</h5>
+							</div>
+						</div>
 					</div>
-					<div className='col l5 s12'>
+					<div className='col l4 m6 s12'>
 						<div className='card center yellow white-text'>
 							<div className='card-content'>
 								<AtomicShell shells={shells} symbol={symbol} />
 							</div>
 						</div>
-					</div>
-					<div className='col l5 s12'>
 						<div className='card  green white-text'>
 							<div className='card-content'>
 								<p className='element-info'>{summary}</p>
 							</div>
 						</div>
 					</div>
-					<div className='col l5 s12'>
+
+					<div className='col l4 s12'>
 						<div className='card  blue white-text'>
 							<div className='card-content'>
 								<table>
@@ -123,17 +131,6 @@ const ElementDetail = ({
 										</tr>
 									</tbody>
 								</table>
-							</div>
-						</div>
-					</div>
-					<div className='col l5 s12'>
-						<div className='card center light-blue white-text'>
-							<div className='card-content'>
-								<h5>
-									<a href={source} className='white-text'>
-										Know More
-									</a>
-								</h5>
 							</div>
 						</div>
 					</div>

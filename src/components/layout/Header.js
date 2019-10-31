@@ -6,7 +6,7 @@ const Header = () => {
 			<div className='navbar-fixed'>
 				<nav>
 					<div className='nav-wrapper'>
-						<Link to='#' className='brand-logo'>
+						<Link to='/' className='brand-logo'>
 							Elemental
 						</Link>
 						<a

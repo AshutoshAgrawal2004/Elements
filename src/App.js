@@ -19,17 +19,19 @@ function App() {
 	return (
 		<Provider store={store}>
 			<Router>
-				<Header />
+				<div className='content'>
+					<Header />
 
-				<Switch>
-					<Route exact path='/' component={Home} />{' '}
-					<Route exact path='/about' component={About} />
-					<Route
-						exact
-						path='/elements/:name'
-						component={ElementDetail}
-					/>
-				</Switch>
+					<Switch>
+						<Route exact path='/' component={Home} />{' '}
+						<Route exact path='/about' component={About} />
+						<Route
+							exact
+							path='/elements/:name'
+							component={ElementDetail}
+						/>
+					</Switch>
+				</div>
 				<Footer />
 			</Router>
 		</Provider>

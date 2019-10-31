@@ -7,6 +7,10 @@ body {
   letter-spacing: 0.1rem;
 }
 
+.content {
+  min-height: calc(100vh - 100px);
+}
+
 .element-img {
   /* border-radius: 50% !important;
   width: 75% !important; */
@@ -40,3 +44,7 @@ th {
 
 h3,
 th {}
+
+.activator:hover {
+  cursor: pointer;
+}

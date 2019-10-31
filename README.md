@@ -1,15 +1,25 @@
 # Elements
 Information about all the elements in a beautiful UI made with React and Materialize using Chemistry API
-![DesktopDemo](ElementalDemo/Home1.png)
-![DesktopDemo](ElementalDemo/Home2.png)
-![DesktopDemo](ElementalDemo/Search.png)
-![DesktopDemo](ElementalDemo/Info1.PNG)
-![DesktopDemo](ElementalDemo/info2.PNG)
-![DesktopDemo](ElementalDemo/Detail.png)
-![DesktopDemo](ElementalDemo/About.png)
-![DesktopDemo](ElementalDemo/MobileHome.jpg)
-![DesktopDemo](ElementalDemo/MobileDetail1.jpg)
-![DesktopDemo](ElementalDemo/MobileDetail2.jpg)
-![DesktopDemo](ElementalDemo/MobileDetail3.jpg)
-![DesktopDemo](ElementalDemo/TabletDetail1.jpg)
-![DesktopDemo](ElementalDemo/TabletDetail2.jpg)
+## Demo Images
+### Desktop
+#### Home
+![DesktopHome](ElementalDemo/Home1.png)
+![DesktopHome](ElementalDemo/Home2.png)
+#### Real Time Search
+![Search](ElementalDemo/Search.png)
+#### Quick Summary
+![Summary](ElementalDemo/Info1.PNG)
+![Summary](ElementalDemo/info2.PNG)
+#### Detail Page
+![Details](ElementalDemo/Detail.png)
+#### About Page
+![About](ElementalDemo/About.png)
+## It's Completely Responsive
+### Mobile
+![Mobile](ElementalDemo/MobileHome.jpg)
+![Mobile](ElementalDemo/MobileDetail1.jpg)
+![Mobile](ElementalDemo/MobileDetail2.jpg)
+![Mobile](ElementalDemo/MobileDetail3.jpg)
+### Tablet
+![Tablet](ElementalDemo/TabletDetail1.jpg)
+![Tablet](ElementalDemo/TabletDetail2.jpg)
